@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_boost/flutter_boost.dart';
+import 'package:flutter_boost_example/demo/module_list.dart';
 import 'case/bottom_navigation_bar_demo.dart';
 import 'case/counter_demo.dart';
 import 'case/dual_screen.dart';
@@ -337,6 +338,16 @@ class _MyAppState extends State<MyApp> {
             return BoostCacheWidget(
               uniqueId: uniqueId!,
               builder: (_) => const FlutterRebuildDemo(),
+            );
+          });
+    },
+    'flutterQuestionDemo': (settings, uniqueId) {
+      return MaterialPageRoute(
+          settings: settings,
+          builder: (ctx) {
+            return ModuleList(
+              // uniqueId: uniqueId!,
+              // builder: (_) => const FlutterRebuildDemo(),
             );
           });
     },

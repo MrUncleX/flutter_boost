@@ -393,6 +393,20 @@ class _FlutterRouteWidgetState extends State<FlutterRouteWidget>
                       .push('flutterRebuildDemo', withContainer: withContainer);
                 },
               ),
+              InkWell(
+                child: Container(
+                    padding: const EdgeInsets.all(8.0),
+                    margin: const EdgeInsets.all(8.0),
+                    color: Colors.yellow,
+                    child: const Text(
+                      'flutter 动画后台切换出现闪烁或残影的demo',
+                      style: TextStyle(fontSize: 22.0, color: Colors.black),
+                    )),
+                onTap: () {
+                  BoostNavigator.instance
+                      .push('flutterQuestionDemo', withContainer: withContainer);
+                },
+              ),
             ],
           ),
         ),

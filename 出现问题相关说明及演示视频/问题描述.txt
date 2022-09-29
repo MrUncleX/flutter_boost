@@ -1,0 +1,6 @@
+1.使用flutter_boost混开，引用下拉刷新组件pull_to_refresh_flutter3: ^2.0.1，配置header,header使用RefreshStyle.Follow
+会出现这个情况，执行动画过程中进入桌面，等动画执行完成返回应用，会有残影（闪烁:此demo没出现），点击其他区域会有残影闪烁。
+
+2.测试过g_faraday混开，相同情况下没有出现此情况。
+	
+萌新，研究了许久，不太清楚问题点在哪。望大佬指点一二。万分感谢。
